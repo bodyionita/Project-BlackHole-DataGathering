@@ -3,7 +3,7 @@ from blackhole_data_gathering.util import read_from_json_file, write_to_json_fil
 import unittest
 import json
 import shutil
-import os
+
 
 class TestUtil(unittest.TestCase):
 
@@ -43,8 +43,6 @@ class TestUtil(unittest.TestCase):
 
     def test_4_write_file_invalid_filename(self):
         write_to_json_file(data=self.data, filename='TESTING INVALID FILENAME *', subdir=self.subdir)
-        print(self.data_dir + 'symbols_not_found.txt')
-        print(os.getcwd())
         with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
             lines = infile.read().splitlines()
             self.assertEqual(lines[-1], '[Errno 22] Invalid argument: \'data/test/TESTING INVALID FILENAME *.json\'')
