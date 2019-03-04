@@ -1,0 +1,46 @@
+Symbol AMCI not found.
+Symbol AMCIW not found.
+Symbol ARNC- not found.
+Symbol BWMC not found.
+Symbol BWMCW not found.
+[Errno 22] Invalid argument: 'data/symbol_data/C-L*.json'
+Symbol DTLA- not found.
+Symbol FTAC not found.
+Symbol GIG^ not found.
+Symbol HLM- not found.
+[Errno 22] Invalid argument: 'data/symbol_data/HTGX*.json'
+Symbol KSU- not found.
+Symbol LTN^ not found.
+Symbol MTB- not found.
+Symbol MTL- not found.
+Symbol MUTE not found.
+Symbol NONE not found.
+[Errno 2] No such file or directory: 'data/symbol_data/PRN.json'
+Symbol PUK- not found.
+Symbol RMPL- not found.
+Symbol TAWK not found.
+Symbol TY- not found.
+Symbol ZNWAA not found.
+Symbol BTCUSDT not found.
+Symbol EOSUSDT not found.
+Symbol ETHUSDT not found.
+Symbol BNBUSDT not found.
+Symbol ONTUSDT not found.
+Symbol BCCUSDT not found.
+Symbol ADAUSDT not found.
+Symbol XRPUSDT not found.
+Symbol TUSDUSDT not found.
+Symbol TRXUSDT not found.
+Symbol LTCUSDT not found.
+Symbol ETCUSDT not found.
+Symbol IOTAUSDT not found.
+Symbol ICXUSDT not found.
+Symbol NEOUSDT not found.
+Symbol VENUSDT not found.
+Symbol XLMUSDT not found.
+Symbol QTUMUSDT not found.
+[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
+[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
+[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
+[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
+[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'

@@ -1,0 +1,121 @@
+{
+  "2018-02-21": {
+    "open": 99.9885,
+    "high": 99.9885,
+    "low": 99.9885,
+    "close": 99.9885,
+    "volume": 101500
+  },
+  "2018-03-01": {
+    "open": 99.9985,
+    "high": 99.9985,
+    "low": 99.9985,
+    "close": 99.9985,
+    "volume": 651
+  },
+  "2018-03-07": {
+    "open": 99.9985,
+    "high": 99.9985,
+    "low": 99.9985,
+    "close": 99.9985,
+    "volume": 150
+  },
+  "2018-03-21": {
+    "open": 99.9985,
+    "high": 99.9985,
+    "low": 99.9985,
+    "close": 99.9985,
+    "volume": 1000
+  },
+  "2018-03-22": {
+    "open": 99.9985,
+    "high": 99.9985,
+    "low": 99.9985,
+    "close": 99.9985,
+    "volume": 100
+  },
+  "2018-03-29": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9985,
+    "volume": 56
+  },
+  "2018-04-03": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9985,
+    "volume": 28
+  },
+  "2018-04-04": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9985,
+    "volume": 36
+  },
+  "2018-04-20": {
+    "open": 99.9385,
+    "high": 99.9385,
+    "low": 99.9385,
+    "close": 99.9385,
+    "volume": 136
+  },
+  "2018-04-23": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 2
+  },
+  "2018-06-19": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 2
+  },
+  "2018-08-03": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 41
+  },
+  "2018-08-07": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 6
+  },
+  "2018-08-08": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 25
+  },
+  "2018-12-17": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 5
+  },
+  "2018-12-31": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 20
+  },
+  "2019-01-02": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9385,
+    "volume": 70
+  }
+}

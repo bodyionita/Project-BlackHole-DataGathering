@@ -1,0 +1,79 @@
+{
+  "2018-12-12": {
+    "open": 9.8,
+    "high": 9.8,
+    "low": 9.5,
+    "close": 9.6,
+    "volume": 1600
+  },
+  "2018-12-17": {
+    "open": 9.6,
+    "high": 9.7525,
+    "low": 9.6,
+    "close": 9.7525,
+    "volume": 25100
+  },
+  "2018-12-18": {
+    "open": 9.6152,
+    "high": 9.6152,
+    "low": 9.6152,
+    "close": 9.6152,
+    "volume": 100
+  },
+  "2018-12-20": {
+    "open": 9.5,
+    "high": 9.6,
+    "low": 9.5,
+    "close": 9.6,
+    "volume": 29000
+  },
+  "2018-12-21": {
+    "open": 9.6,
+    "high": 9.68,
+    "low": 9.6,
+    "close": 9.68,
+    "volume": 25105
+  },
+  "2018-12-27": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 9.68,
+    "volume": 1
+  },
+  "2018-12-28": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 9.68,
+    "volume": 6
+  },
+  "2018-12-31": {
+    "open": 9.8,
+    "high": 9.8,
+    "low": 9.8,
+    "close": 9.8,
+    "volume": 150
+  },
+  "2019-01-04": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 9.8,
+    "volume": 1
+  },
+  "2019-01-07": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 9.8,
+    "volume": 1
+  },
+  "2019-01-08": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 9.8,
+    "volume": 50
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "2018-10-04": {
+    "open": 10.104,
+    "high": 10.104,
+    "low": 10.104,
+    "close": 10.104,
+    "volume": 500
+  },
+  "2018-10-08": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 10.104,
+    "volume": 5
+  },
+  "2018-10-10": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 10.104,
+    "volume": 20
+  },
+  "2018-10-11": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 10.104,
+    "volume": 10
+  },
+  "2018-10-12": {
+    "open": 10.38,
+    "high": 10.38,
+    "low": 10.38,
+    "close": 10.38,
+    "volume": 1200
+  },
+  "2018-10-18": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 10.38,
+    "volume": 10
+  },
+  "2018-10-31": {
+    "open": 7.48,
+    "high": 7.48,
+    "low": 7.48,
+    "close": 7.48,
+    "volume": 353
+  },
+  "2018-11-05": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 7.48,
+    "volume": 3
+  },
+  "2018-11-28": {
+    "open": 6.73,
+    "high": 6.73,
+    "low": 6.73,
+    "close": 6.73,
+    "volume": 300
+  },
+  "2018-12-11": {
+    "open": 6.55,
+    "high": 6.6,
+    "low": 6.55,
+    "close": 6.55,
+    "volume": 400
+  },
+  "2018-12-20": {
+    "open": 7.5,
+    "high": 8.962,
+    "low": 6.891,
+    "close": 6.891,
+    "volume": 1451
+  },
+  "2018-12-21": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 6.891,
+    "volume": 65
+  },
+  "2018-12-27": {
+    "open": 7.5,
+    "high": 7.5,
+    "low": 7.5,
+    "close": 7.5,
+    "volume": 100
+  },
+  "2018-12-28": {
+    "open": 7.6,
+    "high": 7.6,
+    "low": 7.6,
+    "close": 7.6,
+    "volume": 235
+  },
+  "2019-01-07": {
+    "open": 7.01,
+    "high": 7.01,
+    "low": 6.6,
+    "close": 6.6,
+    "volume": 200
+  },
+  "2019-01-10": {
+    "open": 7.0,
+    "high": 7.0,
+    "low": 7.0,
+    "close": 7.0,
+    "volume": 100
+  },
+  "2019-01-11": {
+    "open": 6.5,
+    "high": 6.5,
+    "low": 6.5,
+    "close": 6.5,
+    "volume": 100
+  },
+  "2019-01-14": {
+    "open": 6.6,
+    "high": 7.2,
+    "low": 6.6,
+    "close": 6.85,
+    "volume": 3128
+  }
+}

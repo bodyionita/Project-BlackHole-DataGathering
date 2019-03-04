@@ -1,0 +1,44 @@
+{
+  "2018-04-13": {
+    "open": 99.8393,
+    "high": 99.8393,
+    "low": 99.8393,
+    "close": 99.8393,
+    "volume": 94000
+  },
+  "2018-04-20": {
+    "open": 99.9091,
+    "high": 99.9091,
+    "low": 99.9091,
+    "close": 99.9091,
+    "volume": 618
+  },
+  "2018-04-23": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9091,
+    "volume": 13
+  },
+  "2018-06-19": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9091,
+    "volume": 22
+  },
+  "2018-08-07": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9091,
+    "volume": 1
+  },
+  "2018-12-26": {
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "close": 99.9855,
+    "volume": 17
+  }
+}
