@@ -1,23 +1,10 @@
-# Android VR - BlackHole [![Build Status](https://travis-ci.com/bodyionita/Project-BlackHole.svg?branch=master)](https://travis-ci.com/bodyionita/Project-BlackHole) [![codecov](https://codecov.io/gh/bodyionita/Project-BlackHole/branch/master/graph/badge.svg)](https://codecov.io/gh/bodyionita/Project-BlackHole)
+# Android VR - BlackHole - Data Gathering [![Build Status](https://travis-ci.com/bodyionita/Project-BlackHole-DataGathering.svg?branch=master)](https://travis-ci.com/bodyionita/Project-BlackHole-DataGathering) [![codecov](https://codecov.io/gh/bodyionita/Project-BlackHole-DataGathering/branch/master/graph/badge.svg)](https://codecov.io/gh/bodyionita/Project-BlackHole-DataGathering)
 
-*This is an industry project on which my dissertation is based on. The paper can be found [here]().
+*This is part of an industry project on which my dissertation is based on. The paper can be found [here]().
+The main project repo is [Project BlackHole](https://github.com/bodyionita/Project-BlackHole)
 The project development ran from :calendar: __09/2018__ to __04/2019__. :calendar:*
 
 ## About :information_source:
-
-The project **BlackHole** is a holographic galaxy built around a black hole where all the stars represent 
-specific public companies. The relationship between stars and the black hole, their shape 
-and color is defined by stock price data such as volume, price and time.
-
-The aim of this project is to transform raw data sets into an interactive and immersive experience by 
-visualising everything in Virtual Reality through the use of an Android mobile phone and a VR headset like
-[Google Cardboard](https://vr.google.com/cardboard/)
-
-## BlackHole - Unity
-
-### Getting Started
-
-### Testing :heavy_check_mark:
 
 ## Stock Market Data 
 
