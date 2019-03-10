@@ -1,6 +1,7 @@
 import unittest
 from blackhole_data_gathering.data_push import DataPusher
 
+
 class TestDataPush(unittest.TestCase):
 
     @classmethod
