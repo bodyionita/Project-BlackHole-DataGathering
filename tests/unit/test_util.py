@@ -42,10 +42,14 @@ class TestUtil(unittest.TestCase):
         self.assertEqual(self.data, loaded)
 
     def test_4_write_file_invalid_filename(self):
-        write_to_json_file(data=self.data, filename='TESTING INVALID FILENAME *', subdir=self.subdir)
-        with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
-            lines = infile.read().splitlines()
-            self.assertEqual(lines[-1], '[Errno 22] Invalid argument: \'data/test/TESTING INVALID FILENAME *.json\'')
+        try:
+            write_to_json_file(data=self.data, filename='TESTING INVALID FILENAME *', subdir=self.subdir)
+        except:
+            print("Writing an invalid filename failed")
+        finally:
+            with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
+                lines = infile.read().splitlines()
+                self.assertEqual(lines[-1], '[Errno 22] Invalid argument: \'data/test/TESTING INVALID FILENAME *.json\'')
 
 
 if __name__ == '__main__':
