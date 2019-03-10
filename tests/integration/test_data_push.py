@@ -1,8 +1,16 @@
 import unittest
-
+from blackhole_data_gathering.data_push import DataPusher
 
 class TestDataPush(unittest.TestCase):
-    def test_placeholer(self):
+
+    @classmethod
+    def setUpClass(self):
+        self.data_dir = 'data/'
+        self.subdir = 'test/'
+        self.dir = self.data_dir + self.subdir
+        self.orchestrator = DataPusher()
+
+    def test_example(self):
         self.assertEqual(1, 1)
 
 
