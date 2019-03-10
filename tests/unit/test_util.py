@@ -32,7 +32,6 @@ class TestUtil(unittest.TestCase):
                 outfile.write(str(line) + '\n')
         self.lock.release()
 
-
     def test_1_read_inexistent_file(self):
         self.assertRaises(Exception, read_from_json_file, self.filename, self.subdir)
 
@@ -53,9 +52,9 @@ class TestUtil(unittest.TestCase):
         finally:
             with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
                 lines = infile.read().splitlines()
+                self.lock.release()
                 self.assertEqual(lines[-1],
                                  '[Errno 22] Invalid argument: \'data/test/TESTING INVALID FILENAME *.json\'')
-            self.lock.release()
 
 
 if __name__ == '__main__':

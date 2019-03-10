@@ -102,9 +102,10 @@ class TestDataPull(unittest.TestCase):
         finally:
             with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
                 lines = infile.read().splitlines()
+                self.lock.release()
                 self.assertEqual(lines[-1],
                                  'Symbol AAA not found.')
-            self.lock.release()
+
 
 
 if __name__ == '__main__':
