@@ -42,7 +42,7 @@ class TestUtil(unittest.TestCase):
         self.assertEqual(self.data, loaded)
 
     def test_4_write_file_invalid_filename(self):
-        self.assertRaises(Exception, write_to_json_file, self.data, 'TESTING INVALID FILENAME *', self.subdir)
+        self.assertRaises(Exception, write_to_json_file, self.data, 'TESTING INVALID FILENAME */', self.subdir)
 
 
 if __name__ == '__main__':
