@@ -1,6 +1,10 @@
 [run]
 branch = True
 
+[paths]
+source = ./blackhole_data_gathering/
+
+
 [report]
 exclude_lines =
     if self.debug:

@@ -14,7 +14,7 @@ A python file used for pulling data from [IEX's API](https://iextrading.com/deve
 
 ### Getting Started
 
-### Testing :heavy_check_mark:
+### Testing
 
 
 ## Contributors :pencil2:
@@ -27,16 +27,6 @@ A python file used for pulling data from [IEX's API](https://iextrading.com/deve
     :e-mail:  bogdan.ionita96@gmail.com
 
     :e-mail:  bogdan.ionita.15@ucl.ac.uk
-    
-- **[Rae Harbird](http://www.cs.ucl.ac.uk/people/R.Harbird.html/)** - Project Supervisor
-    
-    Rae is currently a teacher at [University College London](https://www.ucl.ac.uk/) and has supervised
-    my entire development and progress through the academic year.
-    
-- **[Amin Naaj](https://www.linkedin.com/in/amin-n-87375b116/)** - Industry Liaison
-
-    Amin is currently an employee of [Algoraise](https://algoraise.com/) which came up with the idea
-    and the motivation for this project, and was my guide towards achieving something meaningfull.
 
 ## License
 

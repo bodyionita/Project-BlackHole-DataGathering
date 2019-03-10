@@ -46,7 +46,7 @@ class TestDataPull(unittest.TestCase):
                                        " applied chemical markets. The company provides application focused " +
                                        "solutions that include instruments, software, services and consumables" +
                                        " for the entire laboratory workflow.",
-                        "CEO": "",
+                        "CEO": "Michael R. McMullen",
                         "issueType": "cs",
                         "sector": "Healthcare",
                         "tags": [
