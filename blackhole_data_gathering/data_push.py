@@ -38,5 +38,3 @@ class DataPusher:
 
     def push_historical(self):
         raise NotImplementedError
-
-
