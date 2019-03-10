@@ -7,8 +7,10 @@ from blackhole_data_gathering.util import write_to_json_file
 
 class DataPuller:
 
-    @staticmethod
-    def pull_symbols(filename='symbols', subdir=''):
+    def __init__(self):
+        pass
+
+    def pull_symbols(self, filename='symbols', subdir=''):
         """
         Gets all the stock symbols with the following keys and writes it to a file in the data folder.
 
@@ -27,8 +29,7 @@ class DataPuller:
 
         write_to_json_file(data=symbols, filename=filename, subdir=subdir)
 
-    @staticmethod
-    def pull_symbols_extended(symbols, filename='symbols_extended', subdir='symbol_data'):
+    def pull_symbols_extended(self, symbols, filename='symbols_extended', subdir='symbol_data'):
         """
         Gets all the stock symbols with the following keys and writes it to a file in the data folder
         and differs from the simple symbols method as it contains a bit more data
@@ -64,8 +65,7 @@ class DataPuller:
 
         write_to_json_file(data=symbols_extended, filename=filename, subdir=subdir)
 
-    @staticmethod
-    def pull_historical(symbols, date_start, date_end, subdir='symbol_data/'):
+    def pull_historical(self, symbols, date_start, date_end, subdir='symbol_data/'):
         """
         Gets historical data with a granularity of 1 day for a list of symbols and writes them into separate JSON
         files into the data folder with the following keys
