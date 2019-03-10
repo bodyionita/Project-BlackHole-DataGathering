@@ -66,7 +66,7 @@ class DataPuller:
         write_to_json_file(data=symbols_extended, filename=filename, subdir=subdir)
 
     @staticmethod
-    def pull_historical(symbols, date_start=None, date_end=None, subdir='symbol_data/'):
+    def pull_historical(symbols, date_start, date_end, subdir='symbol_data/'):
         """
         Gets historical data with a granularity of 1 day for a list of symbols and writes them into separate JSON
         files into the data folder with the following keys
@@ -83,9 +83,6 @@ class DataPuller:
         :param date_end: datetime -> end date of the historical data
         :param subdir: string -> subdirectory name followed by /
         """
-        if (date_start is None) and (date_end is None):
-            date_end = datetime.today()
-            date_start = datetime(date_end.year - 1, date_end.month, date_end.day)
 
         for symbol in symbols:
             try:
