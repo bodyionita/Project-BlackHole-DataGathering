@@ -52,6 +52,7 @@ class TestUtil(unittest.TestCase):
         finally:
             with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
                 lines = infile.read().splitlines()
+                print(lines[-3:])
                 self.lock.release()
                 self.assertEqual(lines[-1],
                                  '[Errno 22] Invalid argument: \'data/test/TESTING INVALID FILENAME *.json\'')
