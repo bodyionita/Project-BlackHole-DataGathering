@@ -1,6 +1,7 @@
 sudo: false
 
 language: python
+cache: pip
 
 python:
   - 3.5
@@ -17,7 +18,6 @@ script:
   - flake8 blackhole_data_gathering/
   - flake8 tests/  
   - coverage run -m unittest discover -s tests/ -v
-  - coverage report -m
 
 after_success:
   - codecov
