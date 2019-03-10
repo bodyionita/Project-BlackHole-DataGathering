@@ -10,10 +10,8 @@ class DataOrchestrator:
     """
 
     def __init__(self, no_years=5):
-        if no_years > 5:
-            self.number_of_years = 5
-        else:
-            self.number_of_years = no_years
+        no_years = int(no_years)
+        self.number_of_years = max(min(no_years, 5), 1)
 
     def pull_and_write_data(self):
         """
