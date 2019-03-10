@@ -44,8 +44,6 @@ class TestUtil(unittest.TestCase):
     def test_4_write_file_invalid_filename(self):
         try:
             write_to_json_file(data=self.data, filename='TESTING INVALID FILENAME *', subdir=self.subdir)
-        except:
-            print("Writing an invalid filename failed")
         finally:
             with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
                 lines = infile.read().splitlines()
