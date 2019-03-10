@@ -24,8 +24,8 @@ def write_to_json_file(data, filename, subdir=''):
             json.dump(data, outfile, indent=2, separators=(',', ': '))
     except OSError as e:
         with open('data/symbols_not_found.txt', 'a') as outfile:
-            print("I am writing to symbols_not_found")
             outfile.write(str(e) + '\n')
+        raise e
 
 
 def read_from_json_file(filename, subdir=''):
