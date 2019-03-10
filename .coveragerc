@@ -1,6 +1,5 @@
 [run]
 branch = True
-include = ./blackhole_data_gathering/*
 
 [report]
 exclude_lines =

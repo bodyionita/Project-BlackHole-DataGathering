@@ -24,7 +24,7 @@ class TestUtil(unittest.TestCase):
         infile.close()
 
         with open(self.data_dir + 'symbols_not_found.txt', 'w') as outfile:
-            for line in lines:
+            for line in lines[:-1]:
                 outfile.write(str(line) + '\n')
 
     def test_1_read_inexistent_file(self):

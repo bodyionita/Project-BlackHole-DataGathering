@@ -39,12 +39,3 @@ Symbol NEOUSDT not found.
 Symbol VENUSDT not found.
 Symbol XLMUSDT not found.
 Symbol QTUMUSDT not found.
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
-[Errno 22] Invalid argument: 'data/test/TESTING INVALID FILENAME *.json'
