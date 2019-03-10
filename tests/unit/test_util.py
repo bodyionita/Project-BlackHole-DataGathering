@@ -1,4 +1,5 @@
 from blackhole_data_gathering.util import read_from_json_file, write_to_json_file
+from threading import Lock
 
 import unittest
 import json
@@ -14,9 +15,12 @@ class TestUtil(unittest.TestCase):
         self.dir = self.data_dir + self.subdir
         self.filename = 'test_file'
         self.data = {'test': 1}
+        self.lock = Lock()
+        self.lock.acquire()
 
     @classmethod
     def tearDownClass(self):
+        self.lock.acquire()
         shutil.rmtree(self.dir)
 
         infile = open(self.data_dir + 'symbols_not_found.txt', 'r')
@@ -26,6 +30,8 @@ class TestUtil(unittest.TestCase):
         with open(self.data_dir + 'symbols_not_found.txt', 'w') as outfile:
             for line in lines[:-1]:
                 outfile.write(str(line) + '\n')
+        self.lock.release()
+
 
     def test_1_read_inexistent_file(self):
         self.assertRaises(Exception, read_from_json_file, self.filename, self.subdir)
@@ -49,6 +55,7 @@ class TestUtil(unittest.TestCase):
                 lines = infile.read().splitlines()
                 self.assertEqual(lines[-1],
                                  '[Errno 22] Invalid argument: \'data/test/TESTING INVALID FILENAME *.json\'')
+            self.lock.release()
 
 
 if __name__ == '__main__':

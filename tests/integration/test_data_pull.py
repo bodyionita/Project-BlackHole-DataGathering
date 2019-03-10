@@ -1,5 +1,6 @@
 from blackhole_data_gathering.data_pull import DataPuller
 from blackhole_data_gathering.util import read_from_json_file
+from threading import Lock
 
 import unittest
 import shutil
@@ -14,9 +15,12 @@ class TestDataPull(unittest.TestCase):
         self.data_dir = 'data/'
         self.subdir = 'test/'
         self.dir = self.data_dir + self.subdir
+        self.lock = Lock()
+        self.lock.acquire()
 
     @classmethod
     def tearDownClass(self):
+        self.lock.acquire()
         shutil.rmtree(self.dir)
 
         infile = open(self.data_dir + 'symbols_not_found.txt', 'r')
@@ -26,6 +30,7 @@ class TestDataPull(unittest.TestCase):
         with open(self.data_dir + 'symbols_not_found.txt', 'w') as outfile:
             for line in lines[:-1]:
                 outfile.write(str(line) + '\n')
+        self.lock.release()
 
     def test_1_pull_symbols(self):
         filename = 'test_symbols'
@@ -99,6 +104,7 @@ class TestDataPull(unittest.TestCase):
                 lines = infile.read().splitlines()
                 self.assertEqual(lines[-1],
                                  'Symbol AAA not found.')
+            self.lock.release()
 
 
 if __name__ == '__main__':

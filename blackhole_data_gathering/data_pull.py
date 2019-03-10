@@ -3,7 +3,6 @@ from iexfinance.stocks import get_historical_data, Stock
 from iexfinance.utils.exceptions import IEXSymbolError
 
 from blackhole_data_gathering.util import write_to_json_file
-from datetime import datetime
 
 
 class DataPuller:
