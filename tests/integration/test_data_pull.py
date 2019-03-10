@@ -94,7 +94,7 @@ class TestDataPull(unittest.TestCase):
         self.assertEqual(data_verify, data)
 
     def test_4_pull_historical_data_wrong_symbol(self):
-        symbols = ['AAA']
+        symbols = ['A_WRONG_SYMBOL']
         date = datetime(2019, 1, 14)
 
         try:
@@ -103,9 +103,8 @@ class TestDataPull(unittest.TestCase):
             with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
                 lines = infile.read().splitlines()
                 self.lock.release()
-                print(lines[-3:])
                 self.assertEqual(lines[-1],
-                                 'Symbol AAA not found.')
+                                 'Symbol A_WRONG_SYMBOL not found.')
 
 
 if __name__ == '__main__':
