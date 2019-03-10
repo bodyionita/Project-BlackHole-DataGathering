@@ -45,7 +45,8 @@ class DataOrchestrator:
         """
         Read all the data to be worked with from the data folder and push it to Azure
         """
-
+        # self.data_pusher.push_data()
+        pass
 
 def main():
 

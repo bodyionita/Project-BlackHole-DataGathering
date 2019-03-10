@@ -1,3 +1,4 @@
 iexfinance==0.4.0
 codecov==2.0.15
 flake8==3.6.0
+pymongo==3.7.2

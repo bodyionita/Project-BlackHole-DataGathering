@@ -91,3 +91,5 @@ class DataPuller:
                     outfile.write(str(e)+'\n')
             else:
                 write_to_json_file(data=symbol_data, filename=symbol, subdir=subdir)
+
+

@@ -9,5 +9,5 @@ setup(
     author='Bogdan Ionita',
     author_email='bogdan.ionita.15@ucl.ac.uk',
     packages=find_packages(),
-    install_requires=['iexfinance', 'codecov', 'flake8'],
+    install_requires=['iexfinance', 'codecov', 'flake8', 'pymongo'],
 )
