@@ -1,6 +1,6 @@
 from blackhole_data_gathering.data_pull import DataPuller
 from blackhole_data_gathering.data_push import DataPusher
-from blackhole_data_gathering.util import read_from_json_file
+from blackhole_data_gathering.util import read_from_json_file, validate_number_of_years
 from datetime import datetime
 
 
@@ -10,11 +10,10 @@ class DataOrchestrator:
 
     """
 
-    def __init__(self, no_years=5):
-        no_years = int(no_years)
-        self.number_of_years = max(min(no_years, 5), 1)
-        self.data_puller = DataPuller()
-        self.data_pusher = DataPusher()
+    def __init__(self, no_years=1):
+        self.number_of_years = validate_number_of_years(no_years)
+        self.data_puller = DataPuller(self.number_of_years)
+        self.data_pusher = DataPusher(self.number_of_years)
 
     def pull_and_write_data(self):
         """
@@ -34,12 +33,8 @@ class DataOrchestrator:
         # Pull extended symbols data from API and write to json file
         self.data_puller.pull_symbols_extended(symbols)
 
-        # Set start and end date for the historical data
-        end_date = datetime.today()
-        start_date = datetime(end_date.year - self.number_of_years, end_date.month, end_date.day)
-
         # One by one, get historical data for each of the symbols and write into a separate file
-        self.data_puller.pull_historical(symbols, start_date, end_date)
+        self.data_puller.pull_historical(symbols)
 
     def read_and_push_data(self):
         """
@@ -51,7 +46,7 @@ class DataOrchestrator:
 
 def main():
 
-    orchestrator = DataOrchestrator()
+    orchestrator = DataOrchestrator(5)
 
     # orchestrator.pull_and_write_data()
     orchestrator.read_and_push_data()

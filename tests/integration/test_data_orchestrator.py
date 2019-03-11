@@ -9,7 +9,7 @@ class TestDataOrchestrator(unittest.TestCase):
         self.data_dir = 'data/'
         self.subdir = 'test/'
         self.dir = self.data_dir + self.subdir
-        self.orchestrator = DataOrchestrator(1)
+        self.orchestrator = DataOrchestrator()
 
     def test_example(self):
         self.assertEqual(1, 1)

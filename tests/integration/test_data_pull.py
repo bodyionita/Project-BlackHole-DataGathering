@@ -88,8 +88,8 @@ class TestDataPull(unittest.TestCase):
                         }
                       }
 
-        self.data_puller.pull_historical(symbols, date, date, self.subdir)
-        data = read_from_json_file(symbols[0], self.subdir)
+        self.data_puller.pull_historical(symbols=symbols, date=(date, date), subdir=self.subdir)
+        data = read_from_json_file(filename=symbols[0], subdir=self.subdir)
 
         self.assertEqual(data_verify, data)
 
@@ -98,7 +98,7 @@ class TestDataPull(unittest.TestCase):
         date = datetime(2019, 1, 14)
 
         try:
-            self.data_puller.pull_historical(symbols, date, date, self.subdir)
+            self.data_puller.pull_historical(symbols=symbols, date=(date, date), subdir=self.subdir)
         finally:
             with open(self.data_dir + 'symbols_not_found.txt', 'r') as infile:
                 lines = infile.read().splitlines()

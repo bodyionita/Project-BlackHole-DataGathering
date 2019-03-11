@@ -9,7 +9,7 @@ class TestDataPush(unittest.TestCase):
         self.data_dir = 'data/'
         self.subdir = 'test/'
         self.dir = self.data_dir + self.subdir
-        self.orchestrator = DataPusher()
+        self.data_pusher = DataPusher()
 
     def test_example(self):
         self.assertEqual(1, 1)

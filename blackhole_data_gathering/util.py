@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 DIR = 'data/'
 
@@ -44,3 +45,14 @@ def read_from_json_file(filename, subdir=''):
     with open(path, mode) as infile:
         data = json.load(infile)
         return data
+
+
+def validate_number_of_years(years):
+    no_years = int(years)
+    return max(min(no_years, 5), 1)
+
+
+def get_start_end_date_touple(years):
+    end_date = datetime.today()
+    start_date = datetime(end_date.year - years, end_date.month, end_date.day)
+    return start_date, end_date

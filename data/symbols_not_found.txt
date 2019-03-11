@@ -40,4 +40,3 @@ Symbol VENUSDT not found.
 Symbol XLMUSDT not found.
 Symbol QTUMUSDT not found.
 --------------------------
-
