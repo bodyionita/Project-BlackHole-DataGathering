@@ -1,7 +1,6 @@
 from blackhole_data_gathering.data_pull import DataPuller
 from blackhole_data_gathering.data_push import DataPusher
 from blackhole_data_gathering.util import read_from_json_file, validate_number_of_years
-from datetime import datetime
 
 
 class DataOrchestrator:
@@ -40,8 +39,7 @@ class DataOrchestrator:
         """
         Read all the data to be worked with from the data folder and push it to Azure
         """
-        # self.data_pusher.push_data()
-        pass
+        self.data_pusher.push_data()
 
 
 def main():

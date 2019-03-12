@@ -3,7 +3,7 @@ from iexfinance.stocks import get_historical_data, Stock
 from iexfinance.utils.exceptions import IEXSymbolError
 from datetime import datetime
 
-from blackhole_data_gathering.util import write_to_json_file, get_start_end_date_touple, validate_number_of_years
+from blackhole_data_gathering.util import write_to_json_file, get_start_end_date_tuple, validate_number_of_years
 
 
 class DataPuller:
@@ -84,7 +84,7 @@ class DataPuller:
         :param subdir: string -> subdirectory name followed by /
         """
         if date is None:
-            date = get_start_end_date_touple(self.number_of_years)
+            date = get_start_end_date_tuple(self.number_of_years)
 
         for symbol in symbols:
             try:
