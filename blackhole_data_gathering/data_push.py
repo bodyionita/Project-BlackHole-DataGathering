@@ -10,11 +10,12 @@ MINIMUM_COVERAGE = 68.89  # 68.86 - as found to be the max value found for more 
 FAST_PUSH_ENABLED = True  # True to enable Fast Push.
 """
 WARNING! 
-Fast Push: - consumes a lot of memory  ~ 4GB of RAM 
-           - runs fast                 ~ hours
+Fast Push: - consumes a lot of memory  ~ 4.6GB of RAM 
+           - runs fast                 ~ 1-4 hours (10,000 - 400 RU/s in the collection settings)
 Normal:    - consumes little memory    ~ 200MB of RAM 
            - runs slow                 ~ 10 hours 
 """
+
 
 class DataPusher:
 
@@ -88,8 +89,8 @@ class DataPusher:
         self.remove_symbols_with_low_data_coverage(68.89)
         print('Symbols left: %d' % len(self.available_symbols))
 
-        #for s in self.available_symbols:
-        #    self.push_symbol(s)
+        for s in self.available_symbols:
+            self.push_symbol(s)
 
         self.push_historical()
 
