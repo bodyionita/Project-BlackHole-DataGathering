@@ -1,7 +1,6 @@
 from iexfinance.refdata import get_symbols
 from iexfinance.stocks import get_historical_data, Stock
 from iexfinance.utils.exceptions import IEXSymbolError
-from datetime import datetime
 
 from blackhole_data_gathering.util import write_to_json_file, get_start_end_date_tuple, validate_number_of_years
 
@@ -66,7 +65,7 @@ class DataPuller:
 
         write_to_json_file(data=symbols_extended, filename=filename, subdir=subdir)
 
-    def pull_historical(self, symbols, date = None, subdir='symbol_data/'):
+    def pull_historical(self, symbols, date=None, subdir='symbol_data/'):
         """
         Gets historical data with a granularity of 1 day for a list of symbols and writes them into separate JSON
         files into the data folder with the following keys
@@ -79,8 +78,7 @@ class DataPuller:
         volume  the volume transacted
 
         :param symbols: [string] -> list of all the symbols to get data for
-        :param date_start: datetime -> start date of the historical data
-        :param date_end: datetime -> end date of the historical data
+        :param date: (datetime, datetime) -> tuple containing start date and end date
         :param subdir: string -> subdirectory name followed by /
         """
         if date is None:

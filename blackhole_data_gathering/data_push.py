@@ -9,11 +9,11 @@ MINIMUM_COVERAGE = 68.89  # 68.86 - as found to be the max value found for more 
 # on the time period 2014-01-14 to 2019-01-14
 FAST_PUSH_ENABLED = True  # True to enable Fast Push.
 """
-WARNING! 
-Fast Push: - consumes a lot of memory  ~ 4.6GB of RAM 
+WARNING!
+Fast Push: - consumes a lot of memory  ~ 4.6GB of RAM
            - runs fast                 ~ 1-4 hours (10,000 - 400 RU/s in the collection settings)
-Normal:    - consumes little memory    ~ 200MB of RAM 
-           - runs slow                 ~ 10 hours 
+Normal:    - consumes little memory    ~ 200MB of RAM
+           - runs slow                 ~ 10 hours
 """
 
 
