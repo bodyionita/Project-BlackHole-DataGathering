@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import timedelta, datetime, date
+from datetime import timedelta, datetime
 
 DIR = 'data/'
 
