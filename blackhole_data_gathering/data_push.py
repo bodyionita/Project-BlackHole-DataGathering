@@ -33,7 +33,6 @@ class DataPusher:
         self.date_tuple = get_start_end_date_tuple(number_of_years)
 
         self.available_symbols = []
-        self.get_available_symbols()
 
         self.all_daily_data = {}  # WARNING! Will be used only if FAST_PUSH is enabled
 
@@ -84,6 +83,7 @@ class DataPusher:
               % (date_string, len(removed), ', '.join(removed)))
 
     def push_data(self):
+        self.get_available_symbols()
         self.calculate_symbols_data_coverage()
         self.remove_symbols_no_data_for_start_date()
         self.remove_symbols_with_low_data_coverage(68.89)

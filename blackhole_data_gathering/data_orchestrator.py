@@ -46,7 +46,7 @@ def main():
 
     orchestrator = DataOrchestrator(5)
 
-    # orchestrator.pull_and_write_data()
+    orchestrator.pull_and_write_data()
     orchestrator.read_and_push_data()
 
 

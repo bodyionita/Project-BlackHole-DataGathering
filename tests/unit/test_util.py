@@ -1,9 +1,9 @@
-from blackhole_data_gathering.util import read_from_json_file, write_to_json_file
+from blackhole_data_gathering.util import *
 
 import unittest
 import json
 import shutil
-
+from datetime import datetime
 
 class TestUtil(unittest.TestCase):
 
@@ -43,6 +43,20 @@ class TestUtil(unittest.TestCase):
 
     def test_4_write_file_invalid_filename(self):
         self.assertRaises(Exception, write_to_json_file, self.data, 'TESTING INVALID FILENAME */', self.subdir)
+
+    def test_5_date_range(self):
+        start = datetime(2019, 1, 1)
+        end = datetime(2019,1,4)
+        correct = [datetime(2019, 1, 1),datetime(2019, 1, 2),datetime(2019, 1, 3),datetime(2019, 1, 4)]
+        verify = []
+        for date in date_range(start, end):
+            verify.append(date)
+        self.assertEqual(correct, verify)
+
+    def test_6_validate_number_of_years(self):
+        self.assertEqual(5, validate_number_of_years(10))
+        self.assertEqual(1, validate_number_of_years(0))
+        self.assertEqual(3, validate_number_of_years(3.5))
 
 
 if __name__ == '__main__':
