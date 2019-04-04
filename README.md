@@ -6,15 +6,13 @@ The project development ran from :calendar: __09/2018__ to __04/2019__. :calenda
 
 ## About :information_source:
 
-## Stock Market Data 
-
-A python file used for pulling data from [IEX's API](https://iextrading.com/developer/) using the
+A python file used for pulling stock market data from [IEX's API](https://iextrading.com/developer/) using the
 [IEX Finance](https://pypi.org/project/iexfinance/) python module and pushing the data to 
 [Microsoft Azure's](https://azure.microsoft.com/en-us/) Database.
 
-### Getting Started
+## Getting Started
 
-### Testing
+## Testing
 
 
 ## Contributors :pencil2:
