@@ -80,10 +80,10 @@ class TestDataPull(unittest.TestCase):
 
         data_verify = {
                         "2019-01-14": {
-                            "open": 69.72,
-                            "high": 70.29,
-                            "low": 69.67,
-                            "close": 69.75,
+                            "open": 69.5778,
+                            "high": 70.1466,
+                            "low": 69.5279,
+                            "close": 69.6077,
                             "volume": 2182673
                         }
                       }
