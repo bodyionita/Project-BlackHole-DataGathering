@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import timedelta, datetime
+from datetime import timedelta, datetime, date
 
 DIR = 'data/'
 
@@ -55,10 +55,9 @@ def validate_number_of_years(years):
 def get_start_end_date_tuple(years):
     end_date = datetime.today()
     start_date = datetime(end_date.year - years, end_date.month, end_date.day)
-    """ Only for the purpose of pulling the data in one day and pushing it in another day
+    """ Only for the purpose of pulling the data in one day and pushing it in another day    """
     start_date = date(2014, 1, 15)
     end_date = date(2019, 1, 14)
-    """
     return start_date, end_date
 
 

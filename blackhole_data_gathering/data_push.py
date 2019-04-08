@@ -1,6 +1,6 @@
 from blackhole_data_gathering.util import read_from_json_file
 from blackhole_data_gathering.util import validate_number_of_years, get_start_end_date_tuple, date_range
-
+from iexfinance.stocks import Stock
 from pymongo import MongoClient
 import os
 
@@ -98,7 +98,20 @@ class DataPusher:
         if self.details_collection.find_one({'symbol': symbol['symbol']}):
             print('Symbol %s already written to database' % symbol['symbol'])
         else:
-            self.details_collection.insert_one(symbol)
+            extended_symbol = symbol
+            s = Stock(symbol['symbol'])
+            logo_url = s.get_logo()
+            key_stats = s.get_key_stats()
+            extended_symbol['logo_url'] = logo_url['url']
+            extended_symbol['marketcap'] = key_stats['marketcap']
+            extended_symbol['peRatioHigh'] = key_stats['peRatioHigh']
+            extended_symbol['peRatioLow'] = key_stats['peRatioLow']
+            extended_symbol['ttmEPS'] = key_stats['ttmEPS']
+            extended_symbol['latestEPS'] = key_stats['latestEPS']
+            extended_symbol['latestEPSDate'] = key_stats['latestEPSDate']
+            extended_symbol['sharesOutstanding'] = key_stats['sharesOutstanding']
+            extended_symbol['consensusEPS'] = key_stats['consensusEPS']
+            self.details_collection.insert_one(extended_symbol)
 
     def push_historical(self):
         if FAST_PUSH_ENABLED is False:  # NORMAL PUSH
