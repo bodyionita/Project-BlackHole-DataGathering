@@ -92,7 +92,8 @@ class DataPusher:
     def remove_symbols_with_low_data_coverage(self, min_coverage=68.0):
         removed = []
 
-        for s in self.available_symbols:
+        symbs = self.available_symbols
+        for s in symbs:
             if s['coverage'] < min_coverage:
                 removed.append(s['symbol'])
                 self.available_symbols.remove(s)
@@ -103,8 +104,8 @@ class DataPusher:
     def remove_symbols_no_data_for_start_date(self):
         removed = []
         date_string = self.date_tuple[0].strftime("%Y-%m-%d")
-
-        for s in self.available_symbols:
+        symbs = self.available_symbols
+        for s in symbs:
             symbol_data = read_from_json_file(filename=s['symbol'], subdir='symbol_data/')
             if date_string not in symbol_data:
                 removed.append(s['symbol'])
@@ -113,10 +114,22 @@ class DataPusher:
         print('Symbols removed for not having data on start date(%s) for the symbols(%s): %s'
               % (date_string, len(removed), ', '.join(removed)))
 
+    def remove_symbols_with_no_eps(self):
+        removed = []
+        symbs = self.available_symbols
+        for s in symbs:
+            if s["latestEPS"] == 0:
+                removed.append(s['symbol'])
+                self.available_symbols.remove(s)
+
+        print('Symbols removed for not having EPS data (%s): %s'
+              % (len(removed), ', '.join(removed)))
+
     def remove_symbols_with_low_marketcap(self, min_cap):
         removed = []
         unaccepted_values = self.marketcap_ranking[min_cap:]
-        for s in self.available_symbols:
+        symbs = self.available_symbols
+        for s in symbs:
             if s['marketcap'] in unaccepted_values:
                 removed.append(s['symbol'])
                 self.available_symbols.remove(s)
@@ -131,12 +144,14 @@ class DataPusher:
         self.calculate_symbols_data_coverage()
         self.remove_symbols_with_low_data_coverage(MINIMUM_COVERAGE)
 
+        self.remove_symbols_with_no_eps()
+
         self.available_symbols.sort(key=lambda k: k['marketcap'], reverse=True)
         self.available_symbols = self.available_symbols[:TOP_X_BY_MARKETCAP]
         print('Symbols left: %d' % len(self.available_symbols))
 
         for s in self.available_symbols:
-            self.push_symbol(s)
+                    self.push_symbol(s)
 
         self.push_historical()
 
