@@ -13,7 +13,7 @@ A python file used for pulling stock market data from [IEX's API](https://iextra
 ## Getting Started
 1. Get python 3.5 x64 bit version
 2. Get git
-3. Clone this repository by `git clone https://github.com/bodyionita/Project-BlackHole.git`
+3. Clone this repository by `git clone https://github.com/bodyionita/Project-BlackHole-DataGathering.git`
 4. Change to the root directory of it `cd Project-BlackHole-DataGathering`
 5. Run in terminal `pip install -U pip`
 6. Run in terminal `python setup.py install` to install the requirements
