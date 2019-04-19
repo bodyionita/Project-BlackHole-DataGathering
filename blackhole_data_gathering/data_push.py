@@ -92,7 +92,7 @@ class DataPusher:
     def remove_symbols_with_low_data_coverage(self, min_coverage=68.0):
         removed = []
 
-        symbs = self.available_symbols
+        symbs = self.available_symbols.copy()
         for s in symbs:
             if s['coverage'] < min_coverage:
                 removed.append(s['symbol'])
@@ -104,7 +104,7 @@ class DataPusher:
     def remove_symbols_no_data_for_start_date(self):
         removed = []
         date_string = self.date_tuple[0].strftime("%Y-%m-%d")
-        symbs = self.available_symbols
+        symbs = self.available_symbols.copy()
         for s in symbs:
             symbol_data = read_from_json_file(filename=s['symbol'], subdir='symbol_data/')
             if date_string not in symbol_data:
@@ -116,7 +116,7 @@ class DataPusher:
 
     def remove_symbols_with_no_eps(self):
         removed = []
-        symbs = self.available_symbols
+        symbs = self.available_symbols.copy()
         for s in symbs:
             if s["latestEPS"] == 0:
                 removed.append(s['symbol'])
@@ -124,18 +124,6 @@ class DataPusher:
 
         print('Symbols removed for not having EPS data (%s): %s'
               % (len(removed), ', '.join(removed)))
-
-    def remove_symbols_with_low_marketcap(self, min_cap):
-        removed = []
-        unaccepted_values = self.marketcap_ranking[min_cap:]
-        symbs = self.available_symbols
-        for s in symbs:
-            if s['marketcap'] in unaccepted_values:
-                removed.append(s['symbol'])
-                self.available_symbols.remove(s)
-
-        print('Symbols removed for not meeting minimum marketcap (%s) for the symbols(%s): %s'
-              % (min_cap, len(removed), ', '.join(removed)))
 
     def push_data(self):
         self.get_available_symbols()
