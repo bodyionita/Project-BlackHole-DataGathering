@@ -1,6 +1,6 @@
 # Android VR - BlackHole - Data Gathering [![Build Status](https://travis-ci.com/bodyionita/Project-BlackHole-DataGathering.svg?branch=master)](https://travis-ci.com/bodyionita/Project-BlackHole-DataGathering) [![codecov](https://codecov.io/gh/bodyionita/Project-BlackHole-DataGathering/branch/master/graph/badge.svg)](https://codecov.io/gh/bodyionita/Project-BlackHole-DataGathering)
 
-*This is part of an industry project on which my dissertation is based on. The paper can be found [here]().
+*This is part of an industry project on which my dissertation is based on. The paper can be found [here](https://drive.google.com/file/d/17fM2qNF6F9nBIIymw9ciUfRFP3HBxboI/view?usp=sharing).
 The main project repo is [Project BlackHole](https://github.com/bodyionita/Project-BlackHole).
 The project development ran from :calendar: __09/2018__ to __04/2019__. :calendar:*
 
